@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Kiểm tra số chẳn lẻ</h2>
+    Enter a number: <input type="text" id="ktr"  onkeyup="myFunction()"> <br>
+   
+    <script>
+        function myFunction() {
+            var number = parseInt(document.getElementById("ktr").value);
+            if ((number)) {
+                if (number % 2 === 0) {
+                    alert(number + " là số chẵn");
+                } else {
+                    alert(number + " là số lẻ");
+                }
+            } else {
+                alert("Vui lòng nhập một số hợp lệ.");
+            }
+        }
+    </script>
+</body>
+</html>
